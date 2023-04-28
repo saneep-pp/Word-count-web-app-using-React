@@ -11,7 +11,7 @@
   justify-content: center;
   background: linear-gradient(rgba(14, 13, 13, 0.849), rgba(0, 0, 0, 0.815));
 }
-h2 {
+h1{
   color: aliceblue;
   background-color: dimgrey;
   margin: 0;
@@ -20,6 +20,20 @@ h2 {
   justify-content: center;
   display: flex;
   text-shadow: -5px -5px 5px rgb(50, 37, 37);
+}
+.count{
+  color: aliceblue;
+ 
+  margin-bottom: 50px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-shadow: -5px -5px 5px rgb(120, 103, 103);
+  font-size: 20px;
+  font-weight: 600;
+ 
 }
 textarea {
   background-color: aliceblue;

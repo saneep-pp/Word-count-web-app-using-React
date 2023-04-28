@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 
 function App() {
@@ -8,7 +7,8 @@ function App() {
       alert("Input Should not Empty...!");
     } else {
       let c = wordCount(sr);
-      alert(`Total Number of words in this paragraph is ${c}`);
+
+      document.getElementById("res").innerHTML = c;
     }
   };
   const wordCount = (s) => {
@@ -16,11 +16,17 @@ function App() {
   };
   const clearfun = () => {
     document.getElementById("input").value = "";
+    document.getElementById("res").innerHTML = 0;
   };
   return (
     <>
-      <h2>Word- Count</h2>
+      <h1>Word - Count</h1>
       <div className="container">
+        <div className="count">
+          <h2>Word Count</h2>
+          <p id="res">0</p>
+        </div>
+
         <div className="box">
           <textarea
             id="input"
