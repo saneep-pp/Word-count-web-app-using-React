@@ -3,8 +3,15 @@ import "./App.css";
 function App() {
   const resultfun = () => {
     let sr = document.getElementById("input").value;
+    const popUp = document.querySelector(".pop-up");
+    const okbtnE = document.querySelector(".okbtn");
     if (sr === "" || sr === null) {
-      alert("Input Should not Empty...!");
+      // alert("Input Should not Empty...!");
+      popUp.classList.add("pop-up-open");
+
+      okbtnE.addEventListener("click", () => {
+        popUp.classList.remove("pop-up-open");
+      });
     } else {
       let c = wordCount(sr);
 
@@ -38,6 +45,12 @@ function App() {
         <button id="btn" type="button" onClick={resultfun}>
           Count
         </button>
+        <div className="pop-up">
+          <img src={require("./images/warning.gif")} />
+          <h2>Warning</h2>
+          <p>Input Should not Empty..!</p>
+          <button className="okbtn">OK</button>
+        </div>
         <button id="btn1" type="button" onClick={clearfun}>
           Clear
         </button>

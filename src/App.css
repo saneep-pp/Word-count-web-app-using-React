@@ -11,7 +11,7 @@
   justify-content: center;
   background: linear-gradient(rgba(14, 13, 13, 0.849), rgba(0, 0, 0, 0.815));
 }
-h1{
+h1 {
   color: aliceblue;
   background-color: dimgrey;
   margin: 0;
@@ -21,9 +21,9 @@ h1{
   display: flex;
   text-shadow: -5px -5px 5px rgb(50, 37, 37);
 }
-.count{
+.count {
   color: aliceblue;
- 
+
   margin-bottom: 50px;
   padding: 10px;
   align-items: center;
@@ -33,7 +33,6 @@ h1{
   text-shadow: -5px -5px 5px rgb(120, 103, 103);
   font-size: 20px;
   font-weight: 600;
- 
 }
 textarea {
   background-color: aliceblue;
@@ -69,7 +68,45 @@ button:hover {
   color: aliceblue;
   background-color: darkgreen;
 }
-#btn1:hover {
+#btn1:hover,
+.okbtn:hover {
   color: aliceblue;
   background-color: crimson;
+}
+.pop-up {
+  width: 38%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.01);
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.pop-up-open {
+  visibility: visible;
+  top: 71%;
+  transform: translate(-50%, -50%) scale(1.2);
+  box-shadow: 10px 10px 20px;
+}
+.pop-up h2 {
+  margin-top: 15px;
+  text-align: center;
+  margin: 15px 0;
+  color: red;
+}
+.pop-up img {
+  width: 50px;
+
+  border-radius: 100%;
+
+  position: relative;
+
+  transform: scale(1.2);
 }
